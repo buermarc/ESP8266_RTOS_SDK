@@ -38,7 +38,7 @@ extern "C" {
  *    - ESP_ERR_FLASH_OP_TIMEOUT or ESP_ERR_FLASH_OP_FAIL: Flash write failed.
  *    - For other return codes, refer OTA documentation in esp-idf's app_update component.
  */
-esp_err_t esp_https_ota(const esp_http_client_config_t *config);
+esp_err_t esp_https_ota(const esp_http_client_config_t *config, const char* sign_key);
 
 #ifdef __cplusplus
 }
