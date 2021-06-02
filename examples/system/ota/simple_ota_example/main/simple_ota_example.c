@@ -63,6 +63,7 @@ void simple_ota_example_task(void * pvParameter)
         .url = CONFIG_FIRMWARE_UPGRADE_URL,
         .cert_pem = (char *)server_cert_pem_start,
         .event_handler = _http_event_handler,
+        .transport_type = HTTP_TRANSPORT_OVER_SSL
     };
     esp_err_t ret = esp_https_ota(&config);
     if (ret == ESP_OK) {

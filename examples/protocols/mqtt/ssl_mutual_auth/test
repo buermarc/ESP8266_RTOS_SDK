@@ -1,0 +1,310 @@
+Toolchain path: /home/mulc/downloads/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
+Toolchain version: esp-2020r3-49-gd5524c1
+Compiler version: 8.4.0
+Python requirements from /home/mulc/repos/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+MONITOR
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 7040, room 16 
+tail 0
+chksum 0xd9
+load 0x3ffe8408, len 24, room 8 
+tail 0
+chksum 0x50
+load 0x3ffe8420, len 3316, room 8 
+tail 12
+chksum 0x46
+csum 0x46
+[0;32mI (44) boot: ESP-IDF v3.4-dirty 2nd stage bootloader[0m
+[0;32mI (44) boot: compile time 00:59:37[0m
+[0;32mI (44) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (51) boot: SPI Speed      : 40MHz[0m
+[0;32mI (57) boot: SPI Mode       : QIO[0m
+[0;32mI (63) boot: SPI Flash Size : 2MB[0m
+[0;32mI (70) boot: Partition Table:[0m
+[0;32mI (75) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (86) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (98) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (109) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (121) boot:  3 ota_0            OTA app          00 10 00010000 000f0000[0m
+[0;32mI (133) boot:  4 ota_1            OTA app          00 11 00110000 000f0000[0m
+[0;32mI (144) boot: End of partition table[0m
+[0;32mI (151) boot: No factory image, trying OTA 0[0m
+[0;32mI (158) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x7f420 (521248) map[0m
+[0;32mI (349) esp_image: segment 1: paddr=0x0008f438 vaddr=0x4028f430 size=0x1df28 (122664) map[0m
+[0;32mI (392) esp_image: segment 2: paddr=0x000ad368 vaddr=0x3ffe8000 size=0x00678 (  1656) load[0m
+[0;32mI (393) esp_image: segment 3: paddr=0x000ad9e8 vaddr=0x40100000 size=0x00080 (   128) load[0m
+[0;32mI (403) esp_image: segment 4: paddr=0x000ada70 vaddr=0x40100080 size=0x055d8 ( 21976) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+D (433) phy_init: loading PHY init data from application binary
+D (446) nvs: nvs_flash_init_custom partition=nvs start=9 count=4
+D (457) nvs: nvs_open_from_partition backup_mac 0
+D (459) nvs: nvs_get_str_or_blob backup_mac_data
+D (462) nvs: nvs_close 1
+D (463) system_api: Load MAC from NVS error=0
+D (465) reset_reason: RTC reset 2 wakeup 0 store 0, reason is 2
+D (474) wdt: Enable task watch dog panic, panic time parameter is 11
+D (483) wdt: task watch dog trigger time parameter is 15
+[0;32mI (487) MQTTS_EXAMPLE with OTA: [APP] Startup..[0m
+[0;32mI (495) MQTTS_EXAMPLE with OTA: [APP] Free memory: 100152 bytes[0m
+[0;32mI (505) MQTTS_EXAMPLE with OTA: [APP] IDF version: v3.4-dirty[0m
+D (516) event: running task for loop 0x40106f54
+D (521) event: created task for loop 0x40106f54
+D (528) event: created event loop 0x40106f54
+[0;32mI (534) system_api: Base MAC address is not set, read default base MAC address from EFUSE[0m
+D (548) nvs: nvs_open_from_partition backup_mac 0
+D (554) nvs: nvs_get_str_or_blob backup_mac_data
+D (561) nvs: nvs_close 2
+[0;32mI (565) system_api: Base MAC address is not set, read default base MAC address from EFUSE[0m
+D (578) nvs: nvs_open_from_partition backup_mac 0
+D (585) nvs: nvs_get_str_or_blob backup_mac_data
+D (592) nvs: nvs_close 3
+D (595) phy_init: loading PHY init data from application binary
+D (604) nvs: nvs_open_from_partition phy 0
+D (610) nvs: nvs_get_str_or_blob cal_data
+D (616) nvs: nvs_get_str_or_blob dc_table
+D (622) nvs: nvs_close 4
+phy_version: 1163.0, 665d56c, Jun 24 2020, 10:00:08, RTOS new
+[0;32mI (679) phy_init: phy ver: 1163_0[0m
+D (682) nvs: nvs_open_from_partition misc 1
+D (684) nvs: nvs_open_from_partition nvs.net80211 1
+D (690) nvs: nvs_get opmode 1
+D (694) nvs: nvs_get_str_or_blob sta.ssid
+D (700) nvs: nvs_get_str_or_blob sta.mac
+D (705) nvs: nvs_get sta.authmode 1
+D (710) nvs: nvs_get_str_or_blob sta.pswd
+D (716) nvs: nvs_get_str_or_blob sta.pmk
+D (722) nvs: nvs_get sta.chan 1
+D (726) nvs: nvs_get auto.conn 1
+D (731) nvs: nvs_get bssid.set 1
+D (735) nvs: nvs_get_str_or_blob sta.bssid
+D (741) nvs: nvs_get sta.lis_intval 2
+D (746) nvs: nvs_get sta.phym 1
+D (751) nvs: nvs_get sta.phybw 1
+D (755) nvs: nvs_get_str_or_blob sta.apsw
+D (761) nvs: nvs_get_str_or_blob sta.apinfo
+D (767) nvs: nvs_get sta.scan_method 1
+D (772) nvs: nvs_get sta.sort_method 1
+D (778) nvs: nvs_get sta.minrssi 1
+D (783) nvs: nvs_get sta.minauth 1
+D (787) nvs: nvs_get_str_or_blob ap.ssid
+D (793) nvs: nvs_get_str_or_blob ap.mac
+D (798) nvs: nvs_get_str_or_blob ap.passwd
+D (804) nvs: nvs_get_str_or_blob ap.pmk
+D (810) nvs: nvs_get ap.chan 1
+D (814) nvs: nvs_get ap.authmode 1
+D (819) nvs: nvs_get ap.hidden 1
+D (823) nvs: nvs_get ap.max.conn 1
+D (828) nvs: nvs_get bcn.interval 2
+D (833) nvs: nvs_get ap.phym 1
+D (837) nvs: nvs_get ap.phybw 1
+D (842) nvs: nvs_get ap.sndchan 1
+D (846) nvs: nvs_get lorate 1
+D (850) nvs: nvs_get sta.pmf_e 1
+D (855) nvs: nvs_get sta.pmf_r 1
+D (859) nvs: nvs_get ap.pmf_e 1
+D (864) nvs: nvs_get ap.pmf_r 1
+D (868) nvs: nvs_get_str_or_blob country
+D (874) nvs: nvs_get sta.rm_e 1
+D (878) nvs: nvs_get sta.btm_e 1
+[0;32mI (884) example_connect: Connecting to FRITZ!Box von den Buergs...[0m
+D (894) system_event: SYSTEM_EVENT_STA_START
+D (899) event: running post WIFI_EVENT:2 with handler 0x40270820 on loop 0x40106f54
+[0;32mI (1979) wifi:state: 0 -> 2 (b0)
+[0m[0;32mI (1993) wifi:state: 2 -> 3 (0)
+[0m[0;32mI (2004) wifi:state: 3 -> 5 (10)
+[0m[0;32mI (2039) wifi:connected with FRITZ!Box von den Buergs, aid = 5, channel 1, HT20, bssid = 44:4e:6d:64:c0:28
+[0mD (2040) system_event: SYSTEM_EVENT_STA_CONNECTED, ssid:FRITZ!Box von den Buergs, ssid_len:24, bssid:44:4e:6d:64:c0:28, channel:1, authmode:3
+D (2057) event: running post WIFI_EVENT:4 with handler 0x4027087c on loop 0x40106f54
+D (2069) tcpip_adapter: dhcp client init ip/mask/gw to all-0
+D (2077) tcpip_adapter: if0 start ip lost tmr: enter
+D (2085) tcpip_adapter: if0 start ip lost tmr: no need start because netif=0x401071e8 interval=120 ip=0
+D (2101) tcpip_adapter: dhcp client start successfully
+D (2600) tcpip_adapter: dhcpc time(ms): 0
+
+D (3011) tcpip_adapter: if0 dhcpc cb
+D (3012) tcpip_adapter: if0 ip changed=1
+D (3013) system_event: SYSTEM_EVENT_STA_GOT_IP, ip:192.168.178.118, mask:255.255.255.0, gw:192.168.178.1
+D (3020) event: running post IP_EVENT:0 with handler 0x40270760 on loop 0x40106f54
+[0;32mI (3031) tcpip_adapter: sta ip: 192.168.178.118, mask: 255.255.255.0, gw: 192.168.178.1[0m
+D (3044) event: running post IP_EVENT:0 with handler 0x4022a76c on loop 0x40106f54
+[0;32mI (3056) example_connect: Connected to FRITZ!Box von den Buergs[0m
+[0;32mI (3066) example_connect: IPv4 address: 192.168.178.118[0m
+[0;32mI (3075) MQTTS_EXAMPLE with OTA: [APP] Free memory: 72548 bytes[0m
+[0;32mI (3085) system_api: Base MAC address is not set, read default base MAC address from EFUSE[0m
+D (3098) nvs: nvs_open_from_partition backup_mac 0
+D (3105) nvs: nvs_get_str_or_blob backup_mac_data
+D (3113) nvs: nvs_close 7
+D (3116) MQTT_CLIENT: MQTT client_id=ESP32_150AAA
+D (3123) tcpip_adapter: if0 dhcpc cb
+D (3128) tcpip_adapter: if120 ip unchanged
+D (3133) tcpip_adapter: ip:192.168.178.118,mask:255.255.255.0,gw:192.168.178.1
+
+D (3145) event: created event loop 0x40107b14
+D (3151) MQTT_CLIENT: Core selection disabled
+[0;32mI (3158) MQTTS_EXAMPLE with OTA: Other event id:7[0m
+D (3166) esp-tls: host:192.168.178.123: strlen 15
+[0;32mI (3177) MQTTS_EXAMPLE with OTA: Starting Kill task ...[0m
+[0;32mI (3182) MQTTS_EXAMPLE with OTA: [APP] Free memory: 48224 bytes[0m
+[0;32mI (3191) MQTTS_EXAMPLE with OTA: Maybe Condition should be 0  and is currently 0[0m
+[0;32mI (3204) MQTTS_EXAMPLE with OTA: kill task going to sleep [0m
+D (3285) esp-tls: handshake in progress...
+[0;32mI (3287) mbedtls: ssl_tls.c:8086 => handshake
+[0m
+[0;32mI (3288) mbedtls: ssl_cli.c:3510 client state: 0
+[0m
+[0;32mI (3292) mbedtls: ssl_tls.c:2756 => flush output
+[0m
+[0;32mI (3300) mbedtls: ssl_tls.c:2768 <= flush output
+[0m
+[0;32mI (3309) mbedtls: ssl_cli.c:3510 client state: 1
+[0m
+[0;32mI (3317) mbedtls: ssl_tls.c:2756 => flush output
+[0m
+[0;32mI (3326) mbedtls: ssl_tls.c:2768 <= flush output
+[0m
+[0;32mI (3334) mbedtls: ssl_cli.c:774 => write client hello
+[0m
+D (3343) mbedtls: ssl_cli.c:812 client hello, max version: [3:3]
+
+D (3352) mbedtls: ssl_cli.c:703 client hello, current time: 2
+
+D (3362) mbedtls: ssl_cli.c:821 dumping 'client hello, random bytes' (32 bytes)
+
+D (3372) mbedtls: ssl_cli.c:821 0000:  00 00 00 02 33 a8 db 4d 6d a5 06 c6 a5 b2 e0 ba  ....3..Mm.......
+
+D (3387) mbedtls: ssl_cli.c:821 0010:  60 2c 56 ce 44 60 50 1e 1c 08 b1 c4 38 31 5c 59  `,V.D`P.....81\Y
+
+D (3401) mbedtls: ssl_cli.c:874 client hello, session id len.: 0
+
+D (3410) mbedtls: ssl_cli.c:875 dumping 'client hello, session id' (0 bytes)
+
+D (3420) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c02c
+
+D (3430) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c030
+
+D (3439) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 009f
+
+D (3449) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0ad
+
+D (3458) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c09f
+
+D (3468) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c024
+
+D (3477) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c028
+
+D (3487) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 006b
+
+D (3496) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c00a
+
+D (3506) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c014
+
+D (3515) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 0039
+
+D (3525) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0af
+
+D (3534) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0a3
+
+D (3544) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c02b
+
+D (3553) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c02f
+
+D (3563) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 009e
+
+D (3572) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0ac
+
+D (3581) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c09e
+
+D (3591) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c023
+
+D (3600) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c027
+
+D (3610) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 0067
+
+D (3619) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c009
+
+D (3629) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c013
+
+D (3638) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 0033
+
+D (3648) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0ae
+
+D (3659) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0a2
+
+D (3667) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 009d
+
+D (3676) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c09d
+
+D (3686) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 003d
+
+D (3695) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 0035
+
+D (3705) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c032
+
+D (3714) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c02a
+
+D (3724) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c00f
+
+D (3733) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c02e
+
+D (3743) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c026
+
+D (3752) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c005
+
+D (3762) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0a1
+
+D (3771) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 009c
+
+D (3780) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c09c
+
+D (3790) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 003c
+
+D (3799) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: 002f
+
+D (3809) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c031
+
+D (3818) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c029
+
+D (3828) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c00e
+
+D (3837) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c02d
+
+D (3847) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c025
+
+D (3856) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c004
+
+D (3866) mbedtls: ssl_cli.c:922 client hello, add ciphersuite: c0a0
+
+D (3875) mbedtls: ssl_cli.c:934 client hello, got 48 ciphersuites (excluding SCSVs)
+
+D (3887) mbedtls: ssl_cli.c:943 adding EMPTY_RENEGOTIATION_INFO_SCSV
+
+D (3896) mbedtls: ssl_cli.c:992 client hello, compress len.: 1
+
+D (3905) mbedtls: ssl_cli.c:994 client hello, compress alg.: 0
+
+D (3914) mbedtls: ssl_cli.c:69 client hello, adding server name extension: 192.168.178.123
+
+D (3926) mbedtls: ssl_cli.c:186 client hello, adding signature_algorithms extension
+
+D (3938) mbedtls: ssl_cli.c:271 client hello, adding supported_elliptic_curves extension
+
+D (3950) mbedtls: ssl_cli.c:336 client hello, adding supported_point_formats extension
+
+D (3963) mbedtls: ssl_cli.c:518 client hello, adding encrypt_then_mac extension
+
+D (3973) mbedtls: ssl_cli.c:552 client hello, adding extended_master_secret extension
+
+D (3985) mbedtls: ssl_cli.c:585 client hello, adding session ticket extension
+
+D (3996) mbedtls: ssl_cli.c:1071 client hello, total extension length: 96
+
+[0;32mI (4006) mbedtls: ssl_tls.c:3185 => write handshake message
+[0m
+[0;32mI (4018) mbedtls: ssl_tls.c:3344 => write record
+[0m
+D (4025) mbedtls: ssl_tls.c:3424 output record: msgtype = 22, version = [3:1], msglen = 239
+
+V (4037) mbedtls: ssl_tls.c:3427 dumping 'output record sent to network' (244 bytes)
+
