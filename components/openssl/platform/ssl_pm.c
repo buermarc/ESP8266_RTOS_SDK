@@ -24,6 +24,7 @@
 #include "mbedtls/ctr_drbg.h"
 #include "mbedtls/error.h"
 #include "mbedtls/certs.h"
+#include "mbedtls/md.h"
 
 #define X509_INFO_STRING_LENGTH 8192
 
